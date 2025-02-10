@@ -103,6 +103,7 @@ Here are some example queries included in the project:
 
 3. *Find employees with pending leave requests:*  
    sql
+   
    SELECT e.FirstName, e.LastName, lr.Reason, lr.StartDate, lr.EndDate
    FROM Employees_2 e
    JOIN LeaveRequests lr ON e.EmployeeID = lr.EmployeeID
