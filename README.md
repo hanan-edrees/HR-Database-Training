@@ -88,20 +88,22 @@ Here are some example queries included in the project:
 
 1. *List all employees and their departments:*  
    sql
+   
    SELECT e.FirstName, e.LastName, d.DepartmentName
    FROM Employees_2 e
    JOIN Departments_2 d ON e.DepartmentID = d.DepartmentID;
    
 
-2. *Calculate the average salary per department:*  
+3. *Calculate the average salary per department:*  
    sql
+   
    SELECT d.DepartmentName, AVG(e.Salary) AS AvgSalary
    FROM Departments_2 d
    JOIN Employees_2 e ON d.DepartmentID = e.DepartmentID
    GROUP BY d.DepartmentName;
    
 
-3. *Find employees with pending leave requests:*  
+4. *Find employees with pending leave requests:*  
    sql
    
    SELECT e.FirstName, e.LastName, lr.Reason, lr.StartDate, lr.EndDate
