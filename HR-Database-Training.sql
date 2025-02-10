@@ -1,3 +1,5 @@
+###*1. Create Tables With Constraints*
+sql
 -- Departments Table
 CREATE TABLE Departments_2 (
     DepartmentID INT PRIMARY KEY,
